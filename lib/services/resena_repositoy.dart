@@ -75,7 +75,7 @@ class ResenaService with ChangeNotifier {
   /// Elimina todas las reseñas (opcional)
   Future<void> clearResenas() async {
     final db = await database;
-    await db.delete(_tableName);
+    await db.delete(_tableName); 
     notifyListeners();
   }
 }

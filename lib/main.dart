@@ -1,6 +1,7 @@
 // Importa los widgets de Material Design para la interfaz.
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
 // --- MODIFICADO ---
 // Importa la nueva pantalla de verificación que decide si mostrar login o huella.
 import 'screens/auth_check_screen.dart';
