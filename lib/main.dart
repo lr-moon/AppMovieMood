@@ -12,9 +12,7 @@ import 'services/resena_repositoy.dart';
 // --- MANEJADOR DE MENSAJES EN BACKGROUND (PARA FIREBASE) ---
 @pragma('vm:entry-point')
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   print("Handling a background message: ${message.messageId}");
 }
 
@@ -24,12 +22,10 @@ const Color kGoldColor = Color(0xFFD4AF37);
 const Color kMaroonColor = Color(0xFF8B1E3F);
 
 // --- main() PARA FIREBASE) ---
-void main() async { 
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
 
@@ -46,13 +42,13 @@ void main() async {
 
 // --- CLASE MyApp  ---
 class MyApp extends StatelessWidget {
-  const MyApp({super.key}); 
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'MovieMood', 
+      title: 'MovieMood',
       theme: ThemeData(
         brightness: Brightness.dark,
         scaffoldBackgroundColor: kDarkBackground,
@@ -61,7 +57,7 @@ class MyApp extends StatelessWidget {
           primary: kMaroonColor,
           secondary: kGoldColor,
           background: kDarkBackground,
-          onSecondary: Colors.black, 
+          onSecondary: Colors.black,
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
