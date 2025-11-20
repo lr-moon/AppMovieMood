@@ -35,7 +35,7 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
   }
 
   /// Función que se ejecuta al presionar "Registrar".
-  /// Ahora es 'async' para esperar la operación de la BD.
+  /// es 'async' para esperar la operación de la BD.
   void _onRegisterPressed() async {
     // 1. Validar que las contraseñas coincidan
     if (passwordController.text != confirmPasswordController.text) {

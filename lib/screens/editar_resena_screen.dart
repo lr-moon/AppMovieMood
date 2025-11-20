@@ -108,7 +108,7 @@ class _ReviewFormState extends State<ReviewForm> {
   int _rating = 0;
   bool _isLoading = false;
 
-  // --- CAMBIO: Manejo de la imagen ---
+  // --- Manejo de la imagen ---
   // _imageFile guarda una *nueva* imagen seleccionada por el usuario.
   File? _imageFile;
   final ImagePicker _picker = ImagePicker();
@@ -128,7 +128,6 @@ class _ReviewFormState extends State<ReviewForm> {
   Future<void> _showImageSourceSelection(BuildContext context) async {
     showModalBottomSheet(
       context: context,
-      // Se añaden estilos para que combine con tu app oscura
       backgroundColor: kLightDark,
       builder: (BuildContext bc) {
         return SafeArea(

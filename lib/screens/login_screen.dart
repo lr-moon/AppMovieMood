@@ -298,7 +298,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               borderRadius: BorderRadius.circular(30.0),
                             ),
                           ),
-                          // Llama a la nueva función de login que valida con la BD.
+                          // Llama a la función de login que valida con la BD.
                           onPressed: authProvider.isLoading
                               ? null
                               : _onLoginPressed,

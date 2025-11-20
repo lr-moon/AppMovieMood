@@ -10,9 +10,9 @@ import 'editar_resena_screen.dart';
 // --- Definición de los colores ---
 const Color kMaroonColor = Color(0xFF8B2E41);
 const Color kGoldColor = Color(0xFFD4AF37);
-const Color kLightBackground = Color(0xFFFFFFFF); 
-const Color kDarkText = Color(0xFF2d2d2d); 
-const Color kSubtleText = Color(0xFF5f5f5f); 
+const Color kLightBackground = Color(0xFFFFFFFF);
+const Color kDarkText = Color(0xFF2d2d2d);
+const Color kSubtleText = Color(0xFF5f5f5f);
 
 class ResenaDetalleScreen extends StatelessWidget {
   final int idResena;
@@ -77,7 +77,7 @@ class ResenaDetalleScreen extends StatelessWidget {
               child: Center(
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(20.0),
-                  // --- LÓGICA CORREGIDA PARA CARGAR IMAGEN ---
+                  // --- LÓGICA PARA CARGAR IMAGEN ---
                   // Decide si cargar desde assets o desde un archivo del dispositivo.
                   child: imagenAsset.startsWith('assets/')
                       ? Image.asset(

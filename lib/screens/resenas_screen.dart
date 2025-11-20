@@ -172,7 +172,6 @@ class _ResenasScreenState extends State<ResenasScreen> {
                 _allResenas = snapshot.data!;
                 _filteredResenas = _allResenas;
               }
-              // --- FIN MODIFICACIÓN ---
 
               // --- Manejar "Búsqueda sin resultados" ---
               // Si la lista filtrada está vacía, pero la lista original no,
